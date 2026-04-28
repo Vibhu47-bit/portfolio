@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — BCA Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Dev<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"    class="nav-link active">Home</a></li>
+        <li><a href="#about"   class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <!-- Decorative background blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="grid-overlay"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">👋 Hello, World! I'm</p>
+      <h1 class="hero-name">
+        <span class="name-line">Vaibhav</span>
+        <span class="name-line accent">Sah</span>
+      </h1>
+      <p class="hero-role">
+        <span class="role-text" id="roleText">Frontend Developer</span>
+        <span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-intro">
+        Final-year BCA student passionate about crafting clean, performant web experiences.
+        I turn ideas into elegant digital products — one line of code at a time.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="resume.pdf" class="btn btn-outline" download>
+          <i class="fa fa-download"></i> Resume
+        </a>
+      </div>
+      <!-- Social links -->
+      <div class="hero-social">
+        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:aryan@example.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <!-- Floating code card -->
+    <div class="hero-card">
+      <div class="code-card">
+        <div class="code-card-dots">
+          <span></span><span></span><span></span>
+        </div>
+        <pre class="code-snippet"><span class="c-kw">const</span> <span class="c-var">developer</span> = {
+  <span class="c-key">name</span>: <span class="c-str">"Vaibhav Sah"</span>,
+  <span class="c-key">role</span>: <span class="c-str">"BCA Final Year"</span>,
+  <span class="c-key">skills</span>: [<span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>,
+            <span class="c-str">"JavaScript"</span>],
+  <span class="c-key">status</span>: <span class="c-str">"Open to work 🚀"</span>
+};</pre>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 / About</span>
+        <h2 class="section-title">The Story So Far</h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left: bio -->
+        <div class="about-bio" data-reveal>
+          <p class="about-text">
+            I'm a <strong>final-year BCA student</strong> with a deep love for building
+            things on the web. My journey started with curiosity about how websites
+            work, and quickly evolved into a full-blown obsession with code, design,
+            and problem-solving.
+          </p>
+          <p class="about-text">
+            I believe great software is where <em>logic meets creativity</em>. Beyond
+            academics, I contribute to open-source, participate in hackathons, and
+            constantly sharpen my skills to be industry-ready.
+          </p>
+
+          <!-- Education card -->
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fa fa-graduation-cap"></i></div>
+            <div>
+              <h4>Bachelor of Computer Applications</h4>
+              <p>2023 – 2026 · Final Year · CGPA 8.4</p>
+            </div>
+          </div>
+
+          <!-- Career goal -->
+          <div class="goal-card">
+            <span class="goal-label">Career Goal</span>
+            <p>Land a role as a <strong>Frontend / Full-Stack Developer</strong> where I
+            can build impactful products while growing alongside talented teams.</p>
+          </div>
+        </div>
+
+        <!-- Right: skills -->
+        <div class="about-skills" data-reveal>
+          <h3 class="skills-title">Tech I Work With</h3>
+          <div class="skills-grid">
+            <!-- Each skill chip -->
+            <div class="skill-chip"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="skill-chip"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="skill-chip"><i class="fab fa-js"></i> JavaScript</div>
+            <div class="skill-chip"><i class="fab fa-react"></i> React</div>
+            <div class="skill-chip"><i class="fab fa-python"></i> Python</div>
+            <div class="skill-chip"><i class="fab fa-git-alt"></i> Git</div>
+            <div class="skill-chip"><i class="fa fa-database"></i> MySQL</div>
+            <div class="skill-chip"><i class="fab fa-node-js"></i> Node.js</div>
+            <div class="skill-chip"><i class="fab fa-figma"></i> Figma</div>
+            <div class="skill-chip"><i class="fab fa-github"></i> GitHub</div>
+          </div>
+
+          <!-- Skill bars -->
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>HTML & CSS</span><span>90%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>JavaScript</span><span>75%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>React</span><span>65%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="65"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Python</span><span>60%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="60"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 / Projects</span>
+        <h2 class="section-title">Things I've Built</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card" data-reveal>
+          <div class="project-image">
+            <div class="project-img-placeholder p1">
+              <i class="fa fa-shopping-cart"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" target="_blank"><i class="fa fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-number">01</span>
+            <h3 class="project-title">ShopEasy — E-Commerce UI</h3>
+            <p class="project-desc">A fully responsive e-commerce frontend with cart functionality,
+            product filtering, and smooth animations built with vanilla JS.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-reveal>
+          <div class="project-image">
+            <div class="project-img-placeholder p2">
+              <i class="fa fa-tasks"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" target="_blank"><i class="fa fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-number">02</span>
+            <h3 class="project-title">TaskFlow — Todo App</h3>
+            <p class="project-desc">A task management app with drag-and-drop, local storage persistence,
+            priority labels, and a clean dark-mode interface.</p>
+            <div class="project-tags">
+              <span>React</span><span>CSS Modules</span><span>LocalStorage</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-reveal>
+          <div class="project-image">
+            <div class="project-img-placeholder p3">
+              <i class="fa fa-cloud-sun"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" target="_blank"><i class="fa fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-number">03</span>
+            <h3 class="project-title">WeatherPulse</h3>
+            <p class="project-desc">Real-time weather dashboard consuming OpenWeatherMap API,
+            with animated weather icons, 5-day forecasts, and geolocation support.</p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>REST API</span><span>CSS</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card" data-reveal>
+          <div class="project-image">
+            <div class="project-img-placeholder p4">
+              <i class="fa fa-blog"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" target="_blank"><i class="fa fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-number">04</span>
+            <h3 class="project-title">BlogSpace — CMS Platform</h3>
+            <p class="project-desc">A full-stack blog platform with user authentication, rich-text editor,
+            comment system, and admin dashboard built with Node.js &amp; MySQL.</p>
+            <div class="project-tags">
+              <span>Node.js</span><span>MySQL</span><span>EJS</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card" data-reveal>
+          <div class="project-image">
+            <div class="project-img-placeholder p5">
+              <i class="fa fa-chart-line"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" target="_blank"><i class="fa fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-number">05</span>
+            <h3 class="project-title">StockSense — Finance Tracker</h3>
+            <p class="project-desc">A personal finance tracker with chart visualizations, expense
+            categorization, and CSV export built using Python and Chart.js.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Chart.js</span><span>Flask</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 / Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Left: info -->
+        <div class="contact-info" data-reveal>
+          <p class="contact-intro">
+            I'm currently <span class="highlight">open to internships</span> and
+            entry-level opportunities. Whether you have a project in mind or just
+            want to say hi — my inbox is always open!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:sahvaibhav47@gmail.com" class="contact-item">
+              <i class="fa fa-envelope"></i>
+              <span>sahvaibhav47@gmail.com</span>
+            </a>
+            <!-- <a href="https://github.com" target="_blank" class="contact-item">
+              <i class="fab fa-github"></i>
+              <span>github.com/aryan</span>
+            </a> -->
+            <a href="https://linkedin.com" target="_blank" class="contact-item">
+              <i class="fab fa-linkedin-in"></i>
+              <span>linkedin.com/in/vaibhav</span>
+            </a>
+          </div>
+          <a href="resume.pdf" class="btn btn-primary" download style="margin-top:2rem;display:inline-flex;gap:.5rem;align-items:center;">
+            <i class="fa fa-download"></i> Download Resume
+          </a>
+        </div>
+
+        <!-- Right: form -->
+        <form class="contact-form" id="contactForm" data-reveal novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="off" />
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="off" />
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?"></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span id="btnText">Send Message <i class="fa fa-paper-plane"></i></span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fa fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© 2025 Vaibhav Sah — Crafted with <span class="heart">♥</span> &amp; lots of coffee</p>
+      <div class="footer-social">
+        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:aryan@example.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
